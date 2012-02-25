@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MassiveAttack", "MassiveAttack\MassiveAttack.csproj", "{BCF2D540-4944-4B64-9233-8A8894F3F83B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCF2D540-4944-4B64-9233-8A8894F3F83B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF2D540-4944-4B64-9233-8A8894F3F83B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF2D540-4944-4B64-9233-8A8894F3F83B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BCF2D540-4944-4B64-9233-8A8894F3F83B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF2D540-4944-4B64-9233-8A8894F3F83B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCF2D540-4944-4B64-9233-8A8894F3F83B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
