@@ -22,8 +22,10 @@ C:\Users\amahood\Desktop\MassiveAttack\MassiveAttack\MassiveAttack\obj\Debug\Gen
 C:\Users\amahood\Desktop\MassiveAttack\MassiveAttack\MassiveAttack\obj\Debug\MassiveAttack.dll
 C:\Users\amahood\Desktop\MassiveAttack\MassiveAttack\MassiveAttack\obj\Debug\MassiveAttack.pdb
 C:\Users\amahood\Desktop\MassiveAttack\MassiveAttack\MassiveAttack\obj\Debug\XapCacheFile.xml
-C:\Users\amahood\Desktop\MassiveAttack\MassiveAttack\MassiveAttack\obj\Debug\lilButton.g.i.cs
 C:\Users\amahood\Desktop\MassiveAttack\MassiveAttack\MassiveAttack\obj\Debug\NewButtonPage.g.i.cs
 C:\Users\amahood\Desktop\MassiveAttack\MassiveAttack\MassiveAttack\Bin\Debug\Images\appbar.save.rest.png
 C:\Users\amahood\Desktop\MassiveAttack\MassiveAttack\MassiveAttack\Bin\Debug\Coding4Fun.Phone.Controls.dll
 C:\Users\amahood\Desktop\MassiveAttack\MassiveAttack\MassiveAttack\obj\Debug\RecordPage.g.i.cs
+C:\Users\amahood\Desktop\MassiveAttack\MassiveAttack\MassiveAttack\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\amahood\Desktop\MassiveAttack\MassiveAttack\MassiveAttack\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\amahood\Desktop\MassiveAttack\MassiveAttack\MassiveAttack\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml

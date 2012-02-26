@@ -12,6 +12,7 @@ using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using Microsoft.Xna.Framework.Audio;
 using System.IO.IsolatedStorage;
+using Microsoft.Phone.Shell;
 
 namespace MassiveAttack
 {
@@ -19,13 +20,16 @@ namespace MassiveAttack
     {
         ButtonEntity customButton = new ButtonEntity("Standard");
         public App currentApp = (App)App.Current;
-        public StorageHelper newStore = new StorageHelper();//Not sure if this will work, might want to just make this global
+        public StorageHelper newStore = new StorageHelper();
+              
 
         // XNA objects for record and playback
         Microphone buttonMic;
-        DynamicSoundEffectInstance buttonPlayback; //Might not need
+        DynamicSoundEffectInstance buttonPlayback; 
         // Used for storing captured buffers
         List<byte[]> buttonBufferCollection = new List<byte[]>();
+
+        public bool hasRecorded = false;
 
         public NewButtonPage()
         {
@@ -45,6 +49,12 @@ namespace MassiveAttack
 
         private void Save_Click(object sender, EventArgs e)
         {
+            
+            if (buttonMic.State != MicrophoneState.Stopped)
+            {
+                StopRecording();
+            }
+
             customButton.buttonText = newText.Text;
             customButton.buttonColor.Color = chooseColor.Color;
             customButton.colorString = customButton.buttonColor.Color.ToString();
@@ -91,6 +101,8 @@ namespace MassiveAttack
 
         void StopRecording()
         {
+            hasRecorded = true;
+            (ApplicationBar.Buttons[1] as ApplicationBarIconButton).IsEnabled = true;
             // Get the last partial buffer
             int sampleSize = buttonMic.GetSampleSizeInBytes(buttonMic.BufferDuration);
             byte[] extraBuffer = new byte[sampleSize];
@@ -112,6 +124,8 @@ namespace MassiveAttack
                     stream.Write(extraBuffer, 0, extraBytes);
                 }
             }
+
+
         }
 
 

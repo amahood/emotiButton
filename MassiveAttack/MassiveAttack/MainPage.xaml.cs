@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
+using Microsoft.Phone.Controls.Primitives;
 using Microsoft.Xna.Framework;
 using System.Windows.Resources;
 using Microsoft.Xna.Framework.Audio;
@@ -129,16 +130,16 @@ namespace MassiveAttack
             }
         }
 
-        //Method to activate a button (called from drawer app bar)
-        private void ApplicationBarIconButton_Click(object sender, EventArgs e)
-        {
-            ButtonEntity tempButton = new ButtonEntity("Standard");
-            if (listBox1.SelectedIndex != -1)
-            {
-                tempButton = currentApp.globalLib.masterArray[listBox1.SelectedIndex];
-                ActiveVM.setActiveButton(tempButton);
-            }
-        }
+        ////Method to activate a button (called from drawer app bar)
+        //private void ApplicationBarIconButton_Click(object sender, EventArgs e)
+        //{
+        //    ButtonEntity tempButton = new ButtonEntity("Standard");
+        //    if (listBox1.SelectedIndex != -1)
+        //    {
+        //        tempButton = currentApp.globalLib.masterArray[listBox1.SelectedIndex];
+        //        ActiveVM.setActiveButton(tempButton);
+        //    }
+        //}
 
         //Method to navigate to the new button page (Called from drawer app bar)
         private void ApplicationBarIconButton_AddNew(object sender, EventArgs e)
@@ -150,7 +151,10 @@ namespace MassiveAttack
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             ButtonEntity tempDelete = new ButtonEntity("Standard");
-            tempDelete = currentApp.globalLib.masterArray[listBox1.SelectedIndex];
+            if (listBox1.SelectedIndex > 2)
+            {
+                tempDelete = currentApp.globalLib.masterArray[listBox1.SelectedIndex];
+            }
             if (listBox1.SelectedIndex > 2 )
             {            
                 currentApp.globalLib.masterArray.RemoveAt(listBox1.SelectedIndex);
@@ -163,9 +167,19 @@ namespace MassiveAttack
                 myStorage.DeleteButtonStorage(tempDelete.buttonText);
             }
             
-            
+            ButtonEntity tempButton = new ButtonEntity("Standard");
+            tempButton = currentApp.globalLib.masterArray[currentApp.globalLib.masterArray.Count-1];
+             ActiveVM.setActiveButton(tempButton);
+          }
 
-
+        private void listBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ButtonEntity tempButton = new ButtonEntity("Standard");
+            if (listBox1.SelectedIndex != -1)
+            {
+                tempButton = currentApp.globalLib.masterArray[listBox1.SelectedIndex];
+                ActiveVM.setActiveButton(tempButton);
+            }
         }
     
     }

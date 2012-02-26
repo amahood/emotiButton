@@ -5,6 +5,7 @@
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768" 
@@ -21,9 +22,9 @@
         <!--Pivot Control-->
         <controls:Pivot Name="Pivot" Title="emotiButton!" FontFamily="Lucida Sans Unicode" SelectionChanged="Pivot_SelectionChanged">
             <controls:Pivot.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Red" Offset="0.105" />
-                    <GradientStop Color="White" Offset="0.535" />
+                <LinearGradientBrush StartPoint="1,0" EndPoint="1,1" >
+                    <GradientStop Color="Red" Offset="0.18" />
+                    <GradientStop Color="White" Offset="0.25" />
                 </LinearGradientBrush>
             </controls:Pivot.Background>
             
@@ -37,16 +38,23 @@
  
             <!--Library/Drawer Pivot Item-->
             <controls:PivotItem Name="Drawer" Header="Drawer" FontFamily="Lucida Sans Unicode" >
-                <ListBox HorizontalAlignment="Left"  Name="listBox1" Width="467" Height="600" ItemsSource="{Binding}">
+                <ListBox HorizontalAlignment="Left"  Name="listBox1" Width="467" Height="600" ItemsSource="{Binding}" SelectionChanged="listBox1_SelectionChanged">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel>
-                                <Grid x:Name="lilGrid" Height="97" Width="78">
-                                    <Rectangle Height="93" HorizontalAlignment="Left" Margin="2,2,0,0" Name="buttonBorder" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="74" Fill="Black" />
+                                <Grid x:Name="lilGrid" Height="97" Width="78" >
+                                    <toolkit:ContextMenuService.ContextMenu>
+                                        <toolkit:ContextMenu>
+                                            <toolkit:MenuItem Header="delete button" Click="DeleteButton_Click"  />
+                                        </toolkit:ContextMenu>
+                                    </toolkit:ContextMenuService.ContextMenu>
+                                    <!--<Rectangle Height="93" HorizontalAlignment="Left" Margin="2,2,0,0" Name="buttonBorder" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="74" Fill="Black" />-->
+                                    
                                     <Image Height="68" HorizontalAlignment="Left" Name="buttonImage" Stretch="Fill" VerticalAlignment="Top" Width="68" Source="/MassiveAttack;component/buttonoutline.jpg" Margin="5,5,0,0" />
+                                    
                                     <Ellipse Height="52" HorizontalAlignment="Left" Margin="10,5,0,0" Name="buttonFace" VerticalAlignment="Top" Width="58" Fill="{Binding colorString}" />
-                                    <TextBlock Height="52" HorizontalAlignment="Center" Name="buttonFaceWords" Text="{Binding Path=buttonText}" VerticalAlignment="Center" Width="56" FontWeight="ExtraBold" FontSize="12" Foreground="White" OpacityMask="Black" TextAlignment="Center" Margin="10,5,12,40" TextWrapping="Wrap" TextTrimming="None" />
-                                    <TextBlock Height="22" HorizontalAlignment="Left" Margin="5,73,0,0" Name="buttonLabel" Text="{Binding buttonText}" VerticalAlignment="Top" TextAlignment="Center" FontSize="12" Width="70" />
+                                    <TextBlock Height="52" HorizontalAlignment="Center" Name="buttonFaceWords" Text="{Binding Path=buttonText}" VerticalAlignment="Center" Width="56" FontWeight="ExtraBold" FontSize="12" Foreground="White" OpacityMask="Black" TextAlignment="Center" Margin="11,16,11,29" TextWrapping="Wrap" TextTrimming="None" />
+                                    <!--<TextBlock Height="22" HorizontalAlignment="Left" Margin="5,73,0,0" Name="buttonLabel" Text="{Binding buttonText}" VerticalAlignment="Top" TextAlignment="Center" FontSize="12" Width="70" />-->
                                 </Grid>
                             </StackPanel>
                         </DataTemplate>
@@ -60,9 +68,9 @@
     <!--Sample code showing usage of ApplicationBar-->
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="False" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar.check.rest.png" Text="Activate" Click="ApplicationBarIconButton_Click"/>
+            <!--<shell:ApplicationBarIconButton IconUri="/Images/appbar.check.rest.png" Text="Activate" Click="ApplicationBarIconButton_Click"/>-->
             <shell:ApplicationBarIconButton IconUri="/Images/appbar.add.rest.png" Text="Add" Click="ApplicationBarIconButton_AddNew"/>
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar.delete.rest.png" Text="Delete" Click="DeleteButton_Click"/>
+            <!--<shell:ApplicationBarIconButton IconUri="/Images/appbar.delete.rest.png" Text="Delete" Click="DeleteButton_Click"/>-->
             <shell:ApplicationBar.MenuItems>
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>

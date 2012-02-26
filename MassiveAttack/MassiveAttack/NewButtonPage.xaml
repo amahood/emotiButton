@@ -32,7 +32,7 @@
             <ScrollViewer>
             <StackPanel x:Name="AddPanel" Margin="12,17,0,6">
                 <TextBlock Height="46" Name="textBlock1" Text="Enter Button Text:" FontSize="26" Width="444" />
-                <TextBox Height="72" Name="newText" Width="348" />                  
+                    <TextBox Height="72" Name="newText" Width="348" MaxLength="9"/>                  
                 <TextBlock FontSize="26" Margin="0,30" Height="48" Name="textBlock2" Text="Choose Button Color:" Width="450" />
                 <c4fToolkit:ColorHexagonPicker Name="chooseColor" Height="450" Width="384"/>
                 <TextBlock FontSize="26" Margin="0,30" Height="48" Name="recordText" Text="Record Button Sound Effect:" Width="450" />
@@ -46,7 +46,7 @@
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
             <shell:ApplicationBarIconButton IconUri="/Images/appbar.delete.rest.png" Text="Delete" Click="Cancel_Click"/>
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar.save.rest.png" Text="Save" Click="Save_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar.save.rest.png" Text="Save" Click="Save_Click" IsEnabled="False" x:Name="buttonToAccessFromCodeBehind"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 
