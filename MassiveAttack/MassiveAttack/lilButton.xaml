@@ -7,13 +7,13 @@
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
-    d:DesignHeight="100" d:DesignWidth="78">
+    d:DesignHeight="300" d:DesignWidth="300">
     
-    <Grid x:Name="lilGrid" Height="97" Width="78">
+    <Grid x:Name="lilGrid" Height="292" Width="296">
         <!--<Rectangle Height="93" HorizontalAlignment="Left" Margin="2,2,0,0" Name="buttonBorder" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="74" Fill="Black" />-->
-        <Image Height="68" HorizontalAlignment="Left" Name="buttonImage" Stretch="Fill" VerticalAlignment="Top" Width="68"  Source="/MassiveAttack;component/buttonoutline.jpg" Margin="5,5,0,0" />
-        <Ellipse Height="52" HorizontalAlignment="Left" Margin="10,5,0,0" Name="buttonFace" VerticalAlignment="Top" Width="58" Fill="Red" />
-        <TextBlock Height="52" HorizontalAlignment="Center"  Name="buttonText" Text="easy" VerticalAlignment="Center" Width="56"  FontWeight="ExtraBold" FontSize="16" Foreground="White" OpacityMask="Black" TextAlignment="Center" Margin="11,16,11,29" TextWrapping="Wrap" TextTrimming="None" />
+        <Image Height="282" HorizontalAlignment="Left" Name="buttonImage" Stretch="Fill" VerticalAlignment="Top" Width="286"  Source="/MassiveAttack;component/buttonoutline.jpg" Margin="5,5,0,0" />
+        <Ellipse Height="218" HorizontalAlignment="Left" Margin="15,4,0,0" Name="buttonFace" VerticalAlignment="Top" Width="260" Fill="Red" />
+        <TextBlock Height="24" HorizontalAlignment="Center"  Name="buttonText" Text="adamadama" VerticalAlignment="Center" Width="96"  FontWeight="ExtraBold" FontSize="16" Foreground="White" OpacityMask="Black" TextAlignment="Center" Margin="100,103,100,165" TextWrapping="Wrap" TextTrimming="None" />
         <!--<TextBlock Height="22" HorizontalAlignment="Left" Margin="5,73,0,0" Name="buttonLabel" Text="easy" VerticalAlignment="Top" TextAlignment="Center" FontSize="12" Width="70" />-->
     </Grid>
 

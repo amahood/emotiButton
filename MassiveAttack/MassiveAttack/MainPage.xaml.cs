@@ -151,13 +151,18 @@ namespace MassiveAttack
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             ButtonEntity tempDelete = new ButtonEntity("Standard");
-            if (listBox1.SelectedIndex > 2)
+            tempDelete = (ButtonEntity)(sender as MenuItem).Tag;
+            int selectionIndex = 0;
+            selectionIndex = myStorage.FindIndexByName(tempDelete.buttonText);
+
+            //Below doesn't work right, now - need to get the index of the button
+            if (selectionIndex > 2)
             {
-                tempDelete = currentApp.globalLib.masterArray[listBox1.SelectedIndex];
+                tempDelete = currentApp.globalLib.masterArray[selectionIndex];
             }
-            if (listBox1.SelectedIndex > 2 )
-            {            
-                currentApp.globalLib.masterArray.RemoveAt(listBox1.SelectedIndex);
+            if (selectionIndex > 2)
+            {
+                currentApp.globalLib.masterArray.RemoveAt(selectionIndex);
             }
 
             if (tempDelete.isDefault == false)
@@ -168,8 +173,11 @@ namespace MassiveAttack
             }
             
             ButtonEntity tempButton = new ButtonEntity("Standard");
-            tempButton = currentApp.globalLib.masterArray[currentApp.globalLib.masterArray.Count-1];
-             ActiveVM.setActiveButton(tempButton);
+            if (selectionIndex > 2)
+            {
+                tempButton = currentApp.globalLib.masterArray[currentApp.globalLib.masterArray.Count - 1];
+                ActiveVM.setActiveButton(tempButton);
+            }
           }
 
         private void listBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -180,6 +188,11 @@ namespace MassiveAttack
                 tempButton = currentApp.globalLib.masterArray[listBox1.SelectedIndex];
                 ActiveVM.setActiveButton(tempButton);
             }
+        }
+
+        private void ApplicationBarIconButton_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/RecordPage.xaml", UriKind.RelativeOrAbsolute));
         }
     
     }

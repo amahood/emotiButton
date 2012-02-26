@@ -29,3 +29,4 @@ C:\Users\amahood\Desktop\MassiveAttack\MassiveAttack\MassiveAttack\obj\Debug\Rec
 C:\Users\amahood\Desktop\MassiveAttack\MassiveAttack\MassiveAttack\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
 C:\Users\amahood\Desktop\MassiveAttack\MassiveAttack\MassiveAttack\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
 C:\Users\amahood\Desktop\MassiveAttack\MassiveAttack\MassiveAttack\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\amahood\Desktop\MassiveAttack\MassiveAttack\MassiveAttack\Bin\Debug\Images\appbar.questionmark.rest.png

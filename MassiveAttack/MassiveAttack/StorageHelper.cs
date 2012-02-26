@@ -25,6 +25,18 @@ namespace MassiveAttack
         {
         }
 
+        public int FindIndexByName(string buttonName)
+        {
+            int index = 0;
+            for (int i = 0; i < currentApp.globalLib.masterArray.Count; i++)
+            {
+                if (currentApp.globalLib.masterArray[i].buttonText == buttonName)
+                { index = i; }
+            }
+            return index;
+
+        }
+
         public void RetrieveNameArray() 
         {
            

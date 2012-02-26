@@ -23,27 +23,19 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
             <TextBlock x:Name="ApplicationTitle" Text="emotiButton!" FontFamily="Lucida Sans Unicode" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock x:Name="PageTitle" Text="Record Sound" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock x:Name="PageTitle" Text="About" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
-        <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Button Content="Record Sound" Height="71" HorizontalAlignment="Left" Margin="103,58,0,0" Name="button1" VerticalAlignment="Top" Width="233" />
-            <Button Content="Preview Sound" Height="78" HorizontalAlignment="Left" Margin="103,184,0,0" Name="button2" VerticalAlignment="Top" Width="233" />
-            <Button Content="Accept" Height="76" HorizontalAlignment="Left" Margin="103,313,0,0" Name="button3" VerticalAlignment="Top" Width="233" />
-        </Grid>
+        <StackPanel Margin="0,15,0,65" Grid.Row="1">
+            <!--ContentPanel - place additional content here-->
+            <Image Source="/MassiveAttack;component/Images/smallIcon.png" Width="96" Height="96" />
+            <TextBlock HorizontalAlignment="Center" Name="AboutAppName" Text="emotiButton!" VerticalAlignment="Center" FontSize="32" FontWeight="Bold" />
+            <TextBlock HorizontalAlignment="Center" Name="textBlock2" Text="Version 1.0" VerticalAlignment="Center" Width="196" TextAlignment="Center"  />
+            <TextBlock HorizontalAlignment="Center" Name="textBlock3" Text="©2012, PhantomRidge Software" VerticalAlignment="Center" TextAlignment="Center" Width="368" />
+
+            <!--<HyperlinkButton  NavigateUri="mailto:strongwatersoftware@gmail.com" FontSize="16" Content="strongwatersoftare@gmail.com" TargetName="_blank" />-->
+            <TextBlock Name="copyright" Text="emotiButton! is in no way affiliated with Staples Inc.   The 'That was easy' soundbyte is a copyright of Staples Inc." TextWrapping="Wrap" Width="367" FontStyle="Normal" FontSize="14" TextAlignment="Center" Margin="0,50,0,0" />
+        </StackPanel>
     </Grid>
- 
-    <!--Sample code showing usage of ApplicationBar-->
-    <!--<phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
-            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
-            <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
-                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
-            </shell:ApplicationBar.MenuItems>
-        </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>-->
 
 </phone:PhoneApplicationPage>

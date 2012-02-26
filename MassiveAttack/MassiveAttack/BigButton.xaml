@@ -7,13 +7,16 @@
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
-    d:DesignHeight="174" d:DesignWidth="189">
+    d:DesignHeight="300" d:DesignWidth="300">
     
     
     <Grid x:Name="ButtonGrid">
-        <Image Height="174" HorizontalAlignment="Left" Name="buttonImage" Stretch="Fill" VerticalAlignment="Top" Width="189"  />
-        <Ellipse Height="131" HorizontalAlignment="Left" Margin="12,0,0,0" Name="buttonFace" VerticalAlignment="Top" Width="165" Fill="Red" />
-        <TextBlock Height="49" HorizontalAlignment="Center"  Name="buttonText" Text="easy" VerticalAlignment="Center" Width="151" Margin="22,38,16,87" FontWeight="ExtraBold" FontSize="32" Foreground="White" OpacityMask="Black" TextAlignment="Center" />
+        <Image Height="282" HorizontalAlignment="Left" Name="buttonImage" Stretch="Fill" VerticalAlignment="Top" Width="286"  />
+        <Ellipse Height="218" HorizontalAlignment="Left" Margin="12,0,0,0" Name="buttonFace" VerticalAlignment="Top" Width="260" Fill="Red" />
+        <TextBlock Height="64" HorizontalAlignment="Center"  Name="buttonText" Text="easy" VerticalAlignment="Center" Width="260" Margin="12,75,28,161" FontWeight="ExtraBold" FontSize="45" Foreground="White" OpacityMask="Black" TextAlignment="Center" />
     </Grid>
-    
+
+
+
+
 </UserControl>

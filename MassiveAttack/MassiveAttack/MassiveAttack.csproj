@@ -149,6 +149,9 @@
     <Content Include="Images\appbar.delete.rest.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\appbar.questionmark.rest.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\appbar.save.rest.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
