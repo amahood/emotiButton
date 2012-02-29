@@ -62,7 +62,7 @@ namespace MassiveAttack
         }
 
         //Method/Event handler that responds to a new button being made active - Sets up all the necessary things
-        void ActiveVM_NewActiveButton(object sender, EventArgs e)
+        void ActiveVM_NewActiveButton(object sender, MassiveAttack.PressVM.NewActiveHandlerArgs e)
         {
             SolidColorBrush tempColor = new SolidColorBrush();
             curentButton = ActiveVM.activeButton;
@@ -70,7 +70,10 @@ namespace MassiveAttack
             tempColor =  (SolidColorBrush)myConvert.Convert(this.curentButton.colorString, null, null, null);
             bigButton1.buttonFace.Fill = tempColor; 
             resetSound();
-            Pivot.SelectedItem = Button;
+            if (e.wasDeleted == false)
+            {
+                Pivot.SelectedItem = Button;
+            }
         }
         
         //Method/event handler for pressing the play button
@@ -176,7 +179,7 @@ namespace MassiveAttack
             if (selectionIndex > 2)
             {
                 tempButton = currentApp.globalLib.masterArray[currentApp.globalLib.masterArray.Count - 1];
-                ActiveVM.setActiveButton(tempButton);
+                ActiveVM.setActiveButton(tempButton, true);
             }
           }
 
@@ -186,7 +189,7 @@ namespace MassiveAttack
             if (listBox1.SelectedIndex != -1)
             {
                 tempButton = currentApp.globalLib.masterArray[listBox1.SelectedIndex];
-                ActiveVM.setActiveButton(tempButton);
+                ActiveVM.setActiveButton(tempButton, false);
             }
         }
 

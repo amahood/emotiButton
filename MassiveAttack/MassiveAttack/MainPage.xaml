@@ -42,8 +42,8 @@
                     <ListBox HorizontalAlignment="Left"  Name="listBox1" Width="467" Height="500" ItemsSource="{Binding}" SelectionChanged="listBox1_SelectionChanged" VerticalAlignment="Stretch" Margin="0,0,0,-50">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
-                                <ScrollViewer>
-                                <StackPanel Margin="160,0,0,0">
+                                
+                                <StackPanel Margin="0,0,0,0">
                                     <Grid x:Name="lilGrid" Height="122" Width="128" >
                                         <toolkit:ContextMenuService.ContextMenu>
                                             <toolkit:ContextMenu>
@@ -57,10 +57,15 @@
                                         <!--<TextBlock Height="22" HorizontalAlignment="Left" Margin="5,73,0,0" Name="buttonLabel" Text="{Binding buttonText}" VerticalAlignment="Top" TextAlignment="Center" FontSize="12" Width="70" />-->
                                     </Grid>
                                 </StackPanel>
-                            </ScrollViewer>
+                            
                         </DataTemplate>
                         </ListBox.ItemTemplate>
-                    </ListBox>
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <toolkit:WrapPanel />
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                </ListBox>
                 
             </controls:PivotItem>
             

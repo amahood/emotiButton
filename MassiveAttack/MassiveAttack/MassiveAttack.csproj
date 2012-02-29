@@ -160,8 +160,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Resource Include="Images\smallIcon.png" />
+    <Content Include="Sounds\aflac.wav" />
     <Content Include="Sounds\brilliant.wav" />
     <Content Include="Sounds\fart.wav" />
+    <Content Include="Sounds\guiness.wav" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <ItemGroup>

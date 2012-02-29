@@ -16,13 +16,15 @@ namespace MassiveAttack
         public ButtonEntity Default1 = new ButtonEntity("Standard");
         public ButtonEntity Default2 = new ButtonEntity("Standard");
         public ButtonEntity Default3 = new ButtonEntity("Standard");
-       
+        public ButtonEntity Default4 = new ButtonEntity("Standard");
+
 
         public DefaultLib()
         {
             this.initDefault1();
             this.initDefault2();
             this.initDefault3();
+            this.initDefault4();
         }
 
         private void initDefault1()
@@ -44,10 +46,21 @@ namespace MassiveAttack
         private void initDefault3()
         {
             Default3.isDefault = true;
-            Default3.buttonText = "brilliant";
-            Default3.buttonAudioUri = "brilliant.wav";
-            Default3.buttonColor.Color = Colors.Green;
+            Default3.buttonText = "brilliant!";
+            Default3.buttonAudioUri = "guiness.wav";
+            Default3.buttonColor.Color = Colors.Brown;
             Default3.colorString = Default3.buttonColor.Color.ToString();
         }
+
+        private void initDefault4()
+        {
+            Default4.isDefault = true;
+            Default4.buttonText = "Aflac";
+            Default4.buttonAudioUri = "aflac.wav";
+            Default4.buttonColor.Color = Colors.Orange;
+            Default4.colorString = Default4.buttonColor.Color.ToString();
+        }
+
+
     }
 }

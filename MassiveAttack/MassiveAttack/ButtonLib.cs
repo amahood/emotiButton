@@ -23,6 +23,7 @@ namespace MassiveAttack
             masterArray.Add(defaultButtons.Default1);
             masterArray.Add(defaultButtons.Default2);
             masterArray.Add(defaultButtons.Default3);
+            masterArray.Add(defaultButtons.Default4);
         }
 
         public void AddNewButton(ButtonEntity newButton)
