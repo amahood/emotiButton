@@ -1,0 +1,57 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   MassiveAttack/MassiveAttack.suo
+#	modified:   MassiveAttack/MassiveAttack/Bin/Debug/MassiveAttack.dll
+#	modified:   MassiveAttack/MassiveAttack/Bin/Debug/MassiveAttack.pdb
+#	modified:   MassiveAttack/MassiveAttack/Bin/Debug/MassiveAttack.xap
+#	deleted:    MassiveAttack/MassiveAttack/Bin/Debug/Microsoft.Phone.Controls.Toolkit.pdb
+#	deleted:    MassiveAttack/MassiveAttack/Bin/Debug/Microsoft.Phone.Controls.Toolkit.xml
+#	modified:   MassiveAttack/MassiveAttack/Bin/Debug/Microsoft.Phone.Controls.dll
+#	modified:   MassiveAttack/MassiveAttack/Bin/Debug/WMAppManifest.xml
+#	modified:   MassiveAttack/MassiveAttack/Images/smallIcon.png
+#	modified:   MassiveAttack/MassiveAttack/MainPage.xaml
+#	modified:   MassiveAttack/MassiveAttack/MainPage.xaml.cs
+#	modified:   MassiveAttack/MassiveAttack/MassiveAttack.csproj
+#	modified:   MassiveAttack/MassiveAttack/MassiveAttack.csproj.user
+#	modified:   MassiveAttack/MassiveAttack/Properties/AssemblyInfo.cs
+#	modified:   MassiveAttack/MassiveAttack/Properties/WMAppManifest.xml
+#	modified:   MassiveAttack/MassiveAttack/RecordPage.xaml
+#	modified:   MassiveAttack/MassiveAttack/obj/Debug/App.g.cs
+#	modified:   MassiveAttack/MassiveAttack/obj/Debug/App.g.i.cs
+#	modified:   MassiveAttack/MassiveAttack/obj/Debug/BigButton.g.cs
+#	modified:   MassiveAttack/MassiveAttack/obj/Debug/BigButton.g.i.cs
+#	modified:   MassiveAttack/MassiveAttack/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+#	modified:   MassiveAttack/MassiveAttack/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+#	modified:   MassiveAttack/MassiveAttack/obj/Debug/MainPage.g.cs
+#	modified:   MassiveAttack/MassiveAttack/obj/Debug/MainPage.g.i.cs
+#	modified:   MassiveAttack/MassiveAttack/obj/Debug/MassiveAttack.csproj.FileListAbsolute.txt
+#	modified:   MassiveAttack/MassiveAttack/obj/Debug/MassiveAttack.dll
+#	modified:   MassiveAttack/MassiveAttack/obj/Debug/MassiveAttack.g.resources
+#	modified:   MassiveAttack/MassiveAttack/obj/Debug/MassiveAttack.pdb
+#	modified:   MassiveAttack/MassiveAttack/obj/Debug/NewButtonPage.g.cs
+#	modified:   MassiveAttack/MassiveAttack/obj/Debug/NewButtonPage.g.i.cs
+#	modified:   MassiveAttack/MassiveAttack/obj/Debug/RecordPage.g.cs
+#	modified:   MassiveAttack/MassiveAttack/obj/Debug/RecordPage.g.i.cs
+#	modified:   MassiveAttack/MassiveAttack/obj/Debug/XapCacheFile.xml
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	MassiveAttack/MassiveAttack.v11.suo
+#	MassiveAttack/MassiveAttack/Bin/Release/
+#	MassiveAttack/MassiveAttack/Images/marketplaceIcon.png
+#	MassiveAttack/MassiveAttack/Images/smalltile.png
+#	MassiveAttack/MassiveAttack/SubmissionInfo/
+#	MassiveAttack/MassiveAttack/obj/Debug/MassiveAttack.csproj.GenerateResource.Cache
+#	MassiveAttack/MassiveAttack/obj/Debug/MassiveAttack.csprojResolveAssemblyReference.cache
+#	MassiveAttack/MassiveAttack/obj/Release/
+#	MassiveAttack/MassiveAttack/screen1.png
+#	MassiveAttack/UpgradeLog.XML
+#	MassiveAttack/UpgradeLog.htm
+#	MassiveAttack/_UpgradeReport_Files/
+
