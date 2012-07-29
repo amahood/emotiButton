@@ -14,7 +14,7 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
-    shell:SystemTray.IsVisible="True" xmlns:my="clr-namespace:MassiveAttack">
+    shell:SystemTray.IsVisible="True" xmlns:my="clr-namespace:MassiveAttack" xmlns:my1="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
@@ -33,7 +33,9 @@
                 <Grid>
                     <Button Content="Play!" Height="72" HorizontalAlignment="Center"  Name="playButton" VerticalAlignment="Center" Width="160"  />
                     <my:BigButton HorizontalAlignment="Left" Margin="86,145,0,0" x:Name="bigButton1" VerticalAlignment="Top" />
+                    <my1:AdControl AdUnitId="93349" ApplicationId="b0c45892-b0ef-49be-b243-186d734f502f" Height="50" HorizontalAlignment="Left" Margin="63,549,0,0" Name="adControl1" VerticalAlignment="Top" Width="350" />
                 </Grid>
+                
             </controls:PivotItem>
  
             <!--Library/Drawer Pivot Item-->
@@ -69,7 +71,8 @@
                 
             </controls:PivotItem>
             
-        </controls:Pivot>  
+        </controls:Pivot>
+        
     </Grid>
  
     <!--Sample code showing usage of ApplicationBar-->

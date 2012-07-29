@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
-  <App xmlns="" ProductID="{1c90e010-f09c-49db-9159-5fbef7c0aa87}" Title="emotiButton" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="PhantomRidge Software" Description="Make a button, press a button, feel better!" Publisher="PhantomRidge Software">
+  <App xmlns="" ProductID="{1c90e010-f09c-49db-9159-5fbef7c0aa87}" Title="emotiButton!" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="PhantomRidge Software" Description="Make a button, press a button, feel better!" Publisher="PhantomRidge Software">
     <IconPath IsRelative="true" IsResource="false">Images\smallIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_GAMERSERVICES" />
@@ -26,10 +26,10 @@
         <TemplateType5>
           <BackgroundImageURI IsRelative="true" IsResource="false">Images\bigIcon.png</BackgroundImageURI>
           <Count>0</Count>
-          <Title>emotiButton</Title>
+          <Title>emotiButton!</Title>
         </TemplateType5>
       </PrimaryToken>
     </Tokens>
   </App>
 </Deployment>
-<!-- WPSDK Version 7.1.7720.0 -->
+<!-- WPSDK Version 7.1.8773.0 -->

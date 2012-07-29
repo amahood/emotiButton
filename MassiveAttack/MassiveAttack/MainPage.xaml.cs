@@ -159,11 +159,11 @@ namespace MassiveAttack
             selectionIndex = myStorage.FindIndexByName(tempDelete.buttonText);
 
             //Below doesn't work right, now - need to get the index of the button
-            if (selectionIndex > 2)
+            if (selectionIndex > 3)
             {
                 tempDelete = currentApp.globalLib.masterArray[selectionIndex];
             }
-            if (selectionIndex > 2)
+            if (selectionIndex > 3)
             {
                 currentApp.globalLib.masterArray.RemoveAt(selectionIndex);
             }
@@ -176,7 +176,7 @@ namespace MassiveAttack
             }
             
             ButtonEntity tempButton = new ButtonEntity("Standard");
-            if (selectionIndex > 2)
+            if (selectionIndex > 3)
             {
                 tempButton = currentApp.globalLib.masterArray[currentApp.globalLib.masterArray.Count - 1];
                 ActiveVM.setActiveButton(tempButton, true);

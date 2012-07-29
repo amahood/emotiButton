@@ -51,6 +51,8 @@
     <Reference Include="Coding4Fun.Phone.Controls">
       <HintPath>Properties\Coding4Fun.Phone.Controls.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Advertising.Mobile, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.Advertising.Mobile.UI, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
     <Reference Include="Microsoft.Phone" />
     <Reference Include="Microsoft.Phone.Controls" />
     <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL" />
@@ -160,6 +162,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Resource Include="Images\smallIcon.png" />
+    <Resource Include="Images\marketplaceIcon.png" />
+    <Resource Include="Images\smalltile.png" />
     <Content Include="Sounds\aflac.wav" />
     <Content Include="Sounds\brilliant.wav" />
     <Content Include="Sounds\fart.wav" />

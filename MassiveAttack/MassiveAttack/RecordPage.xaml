@@ -34,7 +34,7 @@
             <TextBlock HorizontalAlignment="Center" Name="textBlock3" Text="©2012, PhantomRidge Software" VerticalAlignment="Center" TextAlignment="Center" Width="368" />
 
             <!--<HyperlinkButton  NavigateUri="mailto:strongwatersoftware@gmail.com" FontSize="16" Content="strongwatersoftare@gmail.com" TargetName="_blank" />-->
-            <TextBlock Name="copyright" Text="emotiButton! is in no way affiliated with Staples Inc.   The 'That was easy' soundbyte is a copyright of Staples Inc." TextWrapping="Wrap" Width="367" FontStyle="Normal" FontSize="14" TextAlignment="Center" Margin="0,50,0,0" />
+            <TextBlock Name="copyright" Text="emotiButton! is in no way affiliated with Staples Inc., Guinness Brewery, or Aflac Inc.   The 'That was easy', 'Brilliant!', and 'Aflac!' soundbytes are copyrights of Staples Inc., Guinness Brewery, and Aflac Inc." TextWrapping="Wrap" Width="356" FontStyle="Normal" FontSize="14" TextAlignment="Center" Margin="0,50,0,0" Height="100" />
         </StackPanel>
     </Grid>
 
